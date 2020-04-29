@@ -4,11 +4,13 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  
 
   .logo-container {
     height: 100%;
     width: 70px;
     padding: 25px;
+    z-index: 100;
   }
 
   .options {
@@ -17,6 +19,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 100;
 
     .option {
       padding: 10px 15px;
