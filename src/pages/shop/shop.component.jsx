@@ -25,7 +25,7 @@ const ShopPage = ({ match, history }) => {
 
     let fetchCollection = async () => {
       fetchingStart()
-      console.log(isFetching)
+     
       try {
         const collectionRef = firestore.collection('collections');
         const collectionSnapshot = await collectionRef.get();
@@ -35,8 +35,7 @@ const ShopPage = ({ match, history }) => {
 
       } catch (error) {
         history.push('/')
-       
-        
+      alert('Error was happend')
       }
 
     }
